@@ -52,16 +52,20 @@
         .sidebar-brand h1 {
             font-family: 'Anton', sans-serif;
             color: var(--brand-purple);
-            font-size: 28px;
-            letter-spacing: 1px;
+            font-size: 26px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
+            line-height: 1.1;
         }
 
         .sidebar-brand p {
             font-family: 'Poppins', sans-serif;
             font-size: 12px;
             color: var(--text-muted);
-            margin-top: 4px;
+            margin-top: 6px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
         nav ul {
@@ -224,31 +228,24 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 200px;
+            min-height: 220px;
             text-align: center;
             position: relative;
         }
 
-        .mock-logo-placeholder {
-            border: 2px dashed rgba(0,0,0,0.1);
-            padding: 20px 40px;
-            background: rgba(255,255,255,0.8);
-            font-weight: bold;
-            border-radius: 4px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .dark-bg .mock-logo-placeholder {
-            border-color: rgba(255,255,255,0.3);
-            background: rgba(0,0,0,0.2);
-            color: var(--pure-white);
+        .brand-logo-img {
+            max-width: 85%;
+            height: auto;
+            object-fit: contain;
         }
 
         .mock-caption {
-            margin-top: 16px;
+            margin-top: 20px;
             font-size: 13px;
-            font-weight: 500;
+            font-weight: 600;
             font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         /* Structured Tables */
@@ -296,7 +293,7 @@
 
     <aside>
         <div class="sidebar-brand">
-            <h1>Natomas Music</h1>
+            <h1>Natomas Music Square</h1>
             <p>Brand Guidelines System</p>
         </div>
         <nav>
@@ -325,15 +322,15 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <strong><td>Target Audience</td></strong>
+                        <td style="font-weight: 600;">Target Audience</td>
                         <td>Primary focus on children and teenagers; secondary focus on young adults and local Sacramento music families.</td>
                     </tr>
                     <tr>
-                        <strong><td>Instruction Style</td></strong>
+                        <td style="font-weight: 600;">Instruction Style</td>
                         <td>Highly interactive, structured, and intentional. Moving away from stiff, intimidating classical cadences.</td>
                     </tr>
                     <tr>
-                        <strong><td>Layout Tone</td></strong>
+                        <td style="font-weight: 600;">Layout Tone</td>
                         <td>Spacious, approachable, completely human, and grounded in real-world educational wins.</td>
                     </tr>
                 </tbody>
@@ -420,31 +417,25 @@
             
             <div class="logo-matrix">
                 <div class="mock-container bg-white">
-                    <div class="mock-logo-placeholder" style="color: #000000;">
-                        [ Logo 1 - Dark Text Variant ]
-                    </div>
+                    <img src="https://i.imgur.com/DR3n32i.png" alt="Natomas Music Square Primary Logo" class="brand-logo-img">
                     <div class="mock-caption" style="color: var(--brand-purple);">Layout A: Primary White Base</div>
                 </div>
                 
                 <div class="mock-container bg-purple">
-                    <div class="mock-logo-placeholder">
-                        [ Logo 2 - White Text Variant ]
-                    </div>
+                    <img src="https://i.imgur.com/xnxG8NO.png" alt="Natomas Music Square Light Logo" class="brand-logo-img">
                     <div class="mock-caption">Layout B: Purple Structural Block</div>
                 </div>
 
                 <div class="mock-container bg-red">
-                    <div class="mock-logo-placeholder">
-                        [ Logo 2 - White Text Variant ]
-                    </div>
+                    <img src="https://i.imgur.com/xnxG8NO.png" alt="Natomas Music Square Light Logo" class="brand-logo-img">
                     <div class="mock-caption">Layout C: Crimson Promo Block</div>
                 </div>
 
                 <div class="mock-container bg-forbidden">
-                    <div class="mock-logo-placeholder" style="border-color: #ff4d4d; background: rgba(255,0,0,0.1);">
-                        [ CRITICAL DESIGN ERROR ]
+                    <div style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; border: 2px dashed #ff4d4d; padding: 16px; width: 85%;">
+                        PROHIBITED CONFIGURATION
                     </div>
-                    <div class="mock-caption" style="font-weight: bold;">Layout D: Forbidden Black Space</div>
+                    <div class="mock-caption" style="color: #ff4d4d;">Layout D: Forbidden Black Space</div>
                 </div>
             </div>
         </section>
@@ -463,19 +454,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <strong><td style="color: var(--brand-purple); font-weight: bold;">Student Achievements</td></strong>
+                        <td style="color: var(--brand-purple); font-weight: bold;">Student Achievements</td>
                         <td>Focus entirely on milestone progress, upcoming studio recitals, and clear student wins. Keep the stories personal and genuine.</td>
-                        <td>Generic phrases, generic templates, or clinical performance assessments.</td>
+                        <td>Generic templates or clinical performance assessments.</td>
                     </tr>
                     <tr>
-                        <strong><td style="color: var(--brand-red); font-weight: bold;">Promotional Copy</td></strong>
+                        <td style="color: var(--brand-red); font-weight: bold;">Promotional Copy</td>
                         <td>Directly sell and highlight lesson packages, seasonal studio openings, and teacher expertise. State the program value clearly.</td>
                         <td>Vague claims or over-promising on musical expertise speeds.</td>
                     </tr>
                     <tr>
-                        <strong><td style="color: var(--brand-green); font-weight: bold;">Relatable Humor</td></strong>
+                        <td style="color: var(--brand-green); font-weight: bold;">Relatable Humor</td>
                         <td>Create witty short-form video outlines and memes centered on reading complex music theory, scale practices, and normal stage nerves.</td>
-                        <td>Mean-spirited music critiques, exclusionary jokes, or non-family-friendly media trends.</td>
+                        <td>Mean-spirited music critiques, exclusionary jokes, or non-family-friendly trends.</td>
                     </tr>
                 </tbody>
             </table>
