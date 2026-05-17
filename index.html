@@ -37,7 +37,7 @@
 
         /* Sidebar Navigation Layout */
         aside {
-            width: 300px;
+            width: 320px;
             background-color: var(--bg-light);
             border-right: 1px solid var(--border-color);
             height: 100vh;
@@ -49,23 +49,29 @@
             gap: 32px;
         }
 
-        .sidebar-brand h1 {
-            font-family: 'Anton', sans-serif;
-            color: var(--brand-purple);
-            font-size: 26px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            line-height: 1.1;
+        .sidebar-brand {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .sidebar-logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
         }
 
         .sidebar-brand p {
             font-family: 'Poppins', sans-serif;
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-muted);
-            margin-top: 6px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
+            font-weight: 600;
+            letter-spacing: 1px;
             text-transform: uppercase;
+            border-top: 1px solid var(--border-color);
+            padding-top: 8px;
         }
 
         nav ul {
@@ -293,7 +299,7 @@
 
     <aside>
         <div class="sidebar-brand">
-            <h1>Natomas Music Square</h1>
+            <img src="https://i.imgur.com/DR3n32i.png" alt="Natomas Music Square Logo" class="sidebar-logo">
             <p>Brand Guidelines System</p>
         </div>
         <nav>
